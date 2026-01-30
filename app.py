@@ -26,10 +26,16 @@ st.set_page_config(
 # Custom CSS for better styling
 st.markdown("""
     <style>
-    /* Hide GitHub link only, keep sidebar */
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    .viewerBadge_container__1QSob {display: none;}
+    /* Hide Streamlit branding and GitHub link completely */
+    #MainMenu {visibility: hidden !important;}
+    footer {visibility: hidden !important;}
+    header {visibility: hidden !important;}
+    .viewerBadge_container__1QSob {display: none !important;}
+    [data-testid="stToolbar"] {display: none !important;}
+    [data-testid="stDecoration"] {display: none !important;}
+    [data-testid="stStatusWidget"] {display: none !important;}
+    .stDeployButton {display: none !important;}
+    button[kind="header"] {display: none !important;}
     
     .main-header {
         font-size: 3rem;
