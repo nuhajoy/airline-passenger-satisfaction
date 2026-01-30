@@ -26,6 +26,12 @@ st.set_page_config(
 # Custom CSS for better styling
 st.markdown("""
     <style>
+    /* Hide Streamlit branding and GitHub link */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    .viewerBadge_container__1QSob {display: none;}
+    
     .main-header {
         font-size: 3rem;
         color: #2c3e50;
