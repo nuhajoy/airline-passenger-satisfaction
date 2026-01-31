@@ -144,7 +144,7 @@ def create_feature_vector(inputs):
     return pd.DataFrame([features])
 
 
-
+def main():
     """Main application function"""
     
     # Header
